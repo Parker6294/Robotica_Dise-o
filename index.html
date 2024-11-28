@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="shortcut icon" href="Iconos/icono.ico" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Robotica y Diseño</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM4RY+gY2ZpN7sZ/CdV6s4BX7EJ2k5GZ0qqB7s"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Seymour+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Oswald:wght@200..700&family=Seymour+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=DynaPuff:wght@400..700&family=Oswald:wght@200..700&family=Seymour+One&display=swap" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/eb496ab1a0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="Estilos/style.css" />
+  </head>
+
+  <body>
+
+
+
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              viewBox="0 96 960 960"
+              width="26"
+              fill="#FFFFFF"
+            >
+              <path
+                d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"
+              /></svg
+          ></a>
+        </li>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="quienes_somos.html">Quienes Somos</a></li>
+        <li><a href="caso_de_exito.html">Casos de Exito</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="Contacto.html">Contacto</a></li>
+        <li>
+          <a
+            href="https://unglobalcompact.org/what-is-gc/participants/148382-Robotica-y-Dise-o-SA-de-CV"
+            >sustentabilidad</a
+          >
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <img
+            src="https://github.com/Parker6294/Imagenes/blob/main/Logos/Logo_header.png?raw=true"
+            alt=""
+          />
+        </li>
+        <li class="hideOnMobile"><a href="index.html">Inicio</a></li>
+        <li class="hideOnMobile">
+          <a href="quienes_somos.html">Quienes Somos</a>
+        </li>
+        <li class="hideOnMobile">
+          <a href="caso_de_exito.html">Casos de Exito</a>
+        </li>
+        <li class="hideOnMobile"><a href="productos.html">Productos</a></li>
+        <li class="hideOnMobile"><a href="servicios.html">Servicios</a></li>
+        <li class="hideOnMobile"><a href="Contacto.html">Contacto</a></li>
+        <li class="hideOnMobile">
+          <a
+            href="https://unglobalcompact.org/what-is-gc/participants/148382-Robotica-y-Dise-o-SA-de-CV"
+            >Sustentabilidad</a
+          >
+        </li>
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="40px"
+              viewBox="0 -960 960 960"
+              width="40px"
+              fill="#FFFFFF"
+            >
+              <path
+                d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"
+              /></svg
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- boton de whatsapp -->
+    <a
+      href="https://api.whatsapp.com/send?phone=525542184625"
+      class="btn-wsp"
+      target="_blank"
+    >
+    <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <div class="section-1">
+      <div class="video-background">
+        <video autoplay loop muted playsinline>
+          <source src="imagenes/Fondo.mp4" type="video/mp4">
+          Tu navegador no soporta el formato de video.
+        </video>
+      </div>
+      <div class="overlay">
+        <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+          <h1 class="tracking-in-expand-fwd-top">Somos Ingeniería</h1>
+        </div>
+        <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+          <h2 class="tracking-in-expand-fwd-top">en Empaque</h2>
+        </div>
+        <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+          <p class="small-text">Propuestas de Eficiencia con Soluciones Integrales</p>
+        </div>
+        <div class="tags">
+          <a href="productos.html" class="tag bounce-top" class="heartbeat">Productos</a>
+          <a href="Contacto.html" class="tag bounce-top">Contactos</a>
+        </div>
+      </div>
+    </div>
+    
+  
+    <section class="about-section">
+      <div class="about-content">
+        <div class="text-content">
+          <h2>¿Quiénes Somos?</h2>
+          <p>
+            Somos una empresa 100% mexicana, fundada en 2004, dedicada a ofrecer
+            soluciones innovadoras y de alta calidad, contamos con un equipo altamente
+            capacitado  garantizando la satisfacción de nuestros clientes a través
+            de nuestros productos y servicios excepcionales.<br /><br />
+          </p>
+        </div>
+        <div class="image-right" data-aos="fade-left">
+          <img
+            loading="lazy"
+            src="https://github.com/Parker6294/Imagenes/blob/main/Logos/Logo_original.png?raw=true"
+            alt="Quiénes Somos"
+          />
+        </div>
+      </div>
+
+      <div class="presence-section">
+        <div class="image-left" data-aos="fade-right">
+          <img
+            loading="lazy"
+            src="https://github.com/Parker6294/Imagenes/blob/main/Logos/Logo_americas.png?raw=true"
+            alt="Presencia en Estados Unidos"
+          />
+        </div>
+        <div class="presence-content">
+          <p>
+            Tenemos presencia en Estados Unidos con nuestra empresa hermana
+            <a
+              href="https://rodisainc.com/#about"
+              target="_blank"
+              class="rodisa-link"
+              >RODISA AMERICAS.</a
+            >.
+          </p>
+        </div>
+      </div>
+
+      <div class="values-section">
+        <div data-aos="fade-right" class="value-box">
+          <h3>Misión</h3>
+          <p>
+            Proveer material, equipos y servicios para empaque y embalaje, con
+            el compromiso de ser una solución integral para nuestros clientes.
+          </p>
+        </div>
+        <div data-aos="fade-up" class="value-box">
+          <h3>Visión</h3>
+          <p>
+            Ser una empresa líder en soluciones de empaque y embalaje,
+            incrementando nuestra presencia en el mercado nacional y extranjero.
+            Ser una empresa que contribuya con sus productos y servicios a la
+            sustentabilidad. Ser una empresa que atraiga, desarrolle y retenga a
+            gente excepcional.
+          </p>
+        </div>
+        <div data-aos="fade-left" class="value-box">
+          <h3>Valores</h3>
+          <ul>
+            <li>Integridad</li>
+            <li>Confianza</li>
+            <li>Responsabilidad</li>
+            <li>Respeto</li>
+            <li>Lealtad</li>
+            <li>Trabajo en Equipo</li>
+            <li>Compromiso</li>
+            <li>Renovación</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tarjetas -->
+    <div class="tarjeta titulo">
+      <h1>
+        Peliculas Stretch
+      </h1>
+    </div>
+
+    <div class="cards-container">
+      <div class="card">
+        <div class="card-content">
+          <div class="card-front" style="background-image: url('https://playomexico.com/images/playo9.jpg');">
+            <p class="sub-title">RODISA</p>
+            <h1 class="title">Pelicula Manual</h1>
+          </div>
+          <div class="card-back" style="background-image: url('https://img.freepik.com/fotos-premium/fondo-blanco-abstracto-piedra-fondo-textura-antigua-fondo-conceptual-fondo-pared_721263-1479.jpg');">
+            <div class="back-title">Pelicula Manual</div>
+            <div class="movie-description">
+              <span>Descripcion </span> Coextrusión de polietileno de alto desempeño que logra niveles de elongación y resistencia superiores respecto a la película manual, llegando a una elongación de hasta 330%.
+            </div>
+            <div class="genre">
+              <span></span>
+            </div>
+            <div class="release-date">
+              <span></span>
+            </div>
+            <a href="#" class="btn" data-image="https://github.com/Parker6294/Imagenes/blob/main/imagenes%20galeria/bodegon-11.jpg?raw=true">Ver Imagen</a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div class="card-content">
+          <div class="card-front" style="background-image: url('https://github.com/Parker6294/Imagenes/blob/main/123.jpg?raw=true');">
+            <p class="sub-title">RODISA</p>
+            <h1 class="title">Pelicula Ecologica</h1>
+          </div>
+          <div class="card-back" style="background-image: url('https://img.freepik.com/fotos-premium/fondo-blanco-abstracto-piedra-fondo-textura-antigua-fondo-conceptual-fondo-pared_721263-1479.jpg');">
+            <div class="back-title">Pelicula Ecologica</div>
+            <div class="movie-description">
+              <span>Descripcion </span> A thrilling journey through the world of racing, featuring the fastest cars and the most exciting tracks.
+            </div>
+            <div class="genre">
+              <span></span>
+            </div>
+            <div class="release-date">
+              <span></span>
+            </div>
+            <a href="" class="btn">VER FICHA</a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div class="card-content">
+          <div class="card-front" style="background-image: url('https://github.com/Parker6294/Imagenes/blob/main/RODISA077.jpg?raw=true');">
+            <p class="sub-title">RODISA</p>
+            <h1 class="title">Pelicula Elite</h1>
+          </div>
+          <div class="card-back" style="background-image: url('https://img.freepik.com/fotos-premium/fondo-blanco-abstracto-piedra-fondo-textura-antigua-fondo-conceptual-fondo-pared_721263-1479.jpg');">
+            <div class="back-title">Pelicula Elite</div>
+            <div class="movie-description">
+              <span>Descripcion </span> A sci-fi epic that takes you to the edge of the universe and beyond, exploring the unknown.
+            </div>
+            <div class="genre">
+              <span></span>
+            </div>
+            <div class="release-date">
+              <span></span>
+            </div>
+            <a href="" class="btn">VER FICHA</a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div class="card-content">
+          <div class="card-front" style="background-image: url('https://github.com/Parker6294/Imagenes/blob/main/RODISA102.jpg?raw=true');">
+            <p class="sub-title">RODISA</p>
+            <h1 class="title">Pelicula HP</h1>
+          </div>
+          <div class="card-back" style="background-image: url('https://img.freepik.com/fotos-premium/fondo-blanco-abstracto-piedra-fondo-textura-antigua-fondo-conceptual-fondo-pared_721263-1479.jpg');">
+            <div class="back-title">Pelicula HP</div>
+            <div class="movie-description">
+              <span>Descripcion </span> A thrilling adventure that follows a group of explorers searching for the fabled lost treasure beneath the ocean.
+            </div>
+            <div class="genre">
+              <span></span>
+            </div>
+            <div class="release-date">
+              <span></span>
+            </div>
+            <a href="" class="btn">VER FICHA</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="tarjeta titulo">
+      <h1>
+        Cintas adhesiva
+      </h1>
+    </div>
+
+    <div class="cards-container">
+      <div class="card">
+        <div class="card-content">
+          <div class="card-front" style="background-image: url('https://mem.com.mx/wp-content/uploads/2021/09/Cinta-gorila-2.jpg');">
+            <p class="sub-title">ADHES</p>
+            <h1 class="title">Cinta Adhesiva Gorila</h1>
+          </div>
+          <div class="card-back" style="background-image: url('https://img.freepik.com/fotos-premium/fondo-blanco-abstracto-piedra-fondo-textura-antigua-fondo-conceptual-fondo-pared_721263-1479.jpg');">
+            <div class="back-title">Cinta Adhesiva Gorila</div>
+            <div class="movie-description">
+              <span>Descripcion </span> Coextrusión de polietileno de alto desempeño que logra niveles de elongación y resistencia superiores respecto a la película manual, llegando a una elongación de hasta 330%.
+            </div>
+            <div class="genre">
+              <span></span>
+            </div>
+            <div class="release-date">
+              <span></span>
+            </div>
+            <a href="#" class="btn" data-image="https://github.com/Parker6294/Imagenes/blob/main/imagenes%20galeria/bodegon-11.jpg?raw=true">VER FICHA</a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div class="card-content">
+          <div class="card-front" style="background-image: url('https://i5.walmartimages.com/asr/0113d798-538b-490b-9177-cba4399b7a27.15701ee4b4bf55bec9536de801d80341.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF');">
+            <p class="sub-title">ADHES</p>
+            <h1 class="title">Cinta Adhesiva BOPP</h1>
+          </div>
+          <div class="card-back" style="background-image: url('https://img.freepik.com/fotos-premium/fondo-blanco-abstracto-piedra-fondo-textura-antigua-fondo-conceptual-fondo-pared_721263-1479.jpg');">
+            <div class="back-title">Cinta Adhesiva BOPP</div>
+            <div class="movie-description">
+              <span>Descripcion </span> A thrilling journey through the world of racing, featuring the fastest cars and the most exciting tracks.
+            </div>
+            <div class="genre">
+              <span></span>
+            </div>
+            <div class="release-date">
+              <span></span>
+            </div>
+            <a href="" class="btn">VER FICHAr</a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div class="card-content">
+          <div class="card-front" style="background-image: url('https://waetiquetas.com/wp-content/uploads/2023/05/cintasadhesivas12.jpg');">
+            <p class="sub-title">ADHES</p>
+            <h1 class="title">Cinta Adhesiva Colores</h1>
+          </div>
+          <div class="card-back" style="background-image: url('https://img.freepik.com/fotos-premium/fondo-blanco-abstracto-piedra-fondo-textura-antigua-fondo-conceptual-fondo-pared_721263-1479.jpg');">
+            <div class="back-title">Cinta Adhesiva Colores</div>
+            <div class="movie-description">
+              <span>Descripcion </span> A sci-fi epic that takes you to the edge of the universe and beyond, exploring the unknown.
+            </div>
+            <div class="genre">
+              <span></span>
+            </div>
+            <div class="release-date">
+              <span></span>
+            </div>
+            <a href="" class="btn">VER FICHA</a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div class="card-content">
+          <div class="card-front" style="background-image: url('https://http2.mlstatic.com/D_NQ_NP_861336-MLU72830261667_112023-O.webp');">
+            <p class="sub-title">ADHES</p>
+            <h1 class="title">Cinta Adhesiva Ecologico</h1>
+          </div>
+          <div class="card-back" style="background-image: url('https://img.freepik.com/fotos-premium/fondo-blanco-abstracto-piedra-fondo-textura-antigua-fondo-conceptual-fondo-pared_721263-1479.jpg');">
+            <div class="back-title">Cinta Adhesiva Ecologico</div>
+            <div class="movie-description">
+              <span>Descripcion </span> A thrilling adventure that follows a group of explorers searching for the fabled lost treasure beneath the ocean.
+            </div>
+            <div class="genre">
+              <span></span>
+            </div>
+            <div class="release-date">
+              <span></span>
+            </div>
+            <a href="" class="btn">VER FICHA</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="imageModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalImage" alt="Imagen ampliada">
+    </div>
+    
+    <!-- Aliados -->
+    <section class="seccion-videos">
+      <h2 class="tituloaliados">Aliados Estratégicos</h2>
+      <div class="contenedor-videos">
+        <!-- Video 1 -->
+        <div class="video-item">
+          <video autoplay loop muted>
+            <source src="/imagenes/atlanta.mp4" type="video/mp4" />
+            Tu navegador no soporta la reproducción de video.
+          </video>
+          <img src="https://www.atlantastretch.com/wp-content/uploads/2024/06/LOGO-ATLANTA-STRETCH-b.png" alt="Imagen debajo del Video 1">
+        </div>
+        <!-- Video 2 -->
+        <div class="video-item">
+          <video autoplay loop muted>
+            <source src="/imagenes/comarme.mp4" type="video/mp4" />
+            Tu navegador no soporta la reproducción de video.
+          </video>
+          <img src="https://comarmesrl.com/wp-content/uploads/2021/07/Noback-perfectsize-1024x307.png" alt="Imagen debajo del Video 2">
+        </div>
+        <!-- Video 3 -->
+        <div class="video-item">
+          <video autoplay loop muted>
+            <source src="/imagenes/Bocedi.mp4" type="video/mp4" />
+            Tu navegador no soporta la reproducción de video.
+          </video>
+          <img src="https://github.com/Parker6294/Imagenes/blob/main/Logos/bocedi.png?raw=true" alt="Imagen debajo del Video 3">
+        </div>
+      </div>
+    </section>
+
+    <!-- Social -->
+    <section id="social-media">
+      <h2 class="social-title">Síguenos en nuestras redes sociales</h2>
+      <ul>
+        <li>
+          <a class="facebook" href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a class="instagram" href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <i class="fab fa-instagram" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a class="linkedin" href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+    </section>
+    
+    
+
+    <footer>
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
+      <div class="info">
+        <div>
+          <i class="fa-solid fa-location-dot"></i>
+          <p>
+            Michel Faraday 4,<br />Parque Industrial Cuamatla,<br />Cuautitlán
+            Izcalli,<br />Estado de México
+          </p>
+        </div>
+        <div>
+          <i class="fa-solid fa-phone"></i>
+          <p>55 5881 1277</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-envelope"></i>
+          <p>ventas@rodisacv.com</p>
+        </div>
+      </div>
+      <p>
+        <a href="">Robotica y Diseño</a>
+        <script>
+          ano = new Date();
+          document.write(ano.getFullYear());
+        </script>
+        &copy; Todos los derechos reservados!
+      </p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 3000,
+      });
+    </script>
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
+    <script src="javascript/pantalla_incio.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
