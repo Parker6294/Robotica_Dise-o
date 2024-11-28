@@ -1,0 +1,445 @@
+ * {
+    margin: 0; /* Eliminar márgenes de todos los elementos */
+    padding: 0; /* Eliminar relleno de todos los elementos */
+    box-sizing: border-box; /* Para un mejor control del tamaño de los elementos */
+  }
+  
+  body {
+    min-height: 100vh;
+    background-color: white; /* Fondo blanco para toda la página */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden; /* Desactiva el scroll horizontal */
+  }
+
+  #loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    z-index: 9999;
+}
+
+.top-image {
+    width: 150px; /* Ajusta el tamaño según tu imagen */
+    margin-bottom: 20px; /* Espaciado entre la imagen y el GIF */
+}
+
+.stretch {
+    width: 200px; /* Aumenta el tamaño del GIF */
+    height: auto; /* Mantiene la proporción */
+}
+
+.fade-out {
+    animation: fadeOut 1s forwards; /* Efecto de desvanecimiento */
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+#main-content {
+    display: none; /* Inicialmente oculto */
+    opacity: 1; /* Visibilidad inmediata */
+    text-align: center; /* Centramos el texto */
+    padding: 20px; /* Espaciado alrededor del contenido */
+}
+
+
+.btn-wsp{
+  position:fixed;
+  width:60px;
+  height:60px;
+  line-height: 63px;
+  bottom:25px;
+  right:25px;
+  background:#25d366;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:35px;
+  box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+  z-index:100;
+  transition: all 300ms ease;
+}
+.btn-wsp:hover{
+  background: #20ba5a;
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+  .btn-wsp{
+      width:63px;
+      height:63px;
+      line-height: 66px;
+}
+}
+
+
+nav {
+  background-color: #164267;
+  position: fixed; /* Fijar el menú en la parte superior */
+  top: 0; /* Asegurarse de que esté en la parte superior */
+  left: 0; /* Alinear a la izquierda */
+  width: 100%; /* Ancho completo */
+  height: 100px; /* Altura suficiente para acomodar la imagen */
+  display: flex; /* Activar flexbox */
+  align-items: center; /* Centrar verticalmente los elementos */
+  justify-content: space-between; /* Separar los elementos dentro del nav */
+  z-index: 10; /* Asegúrate de que esté por encima de otros elementos */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end; /* Colocar elementos al final */
+  align-items: center; /* Centrar verticalmente */
+  margin: 0;
+  padding: 0;
+  flex-grow: 1;
+}
+
+nav li {
+  height: 100%; /* Coincidir con la altura del nav */
+}
+
+nav a {
+  height: 100%; /* Coincidir con la altura del nav */
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center; /* Alinear texto verticalmente */
+  color: rgb(255, 255, 255);
+  font-family: "Asap", sans-serif;
+  font-size: 1.2rem; /* Tamaño de fuente más grande */
+}
+
+
+nav img {
+  height: 100px; /* Tamaño grande pero proporcional */
+  width: auto; /* Mantener proporciones */
+  margin-left: 20px; /* Espacio a la izquierda de la imagen */
+}
+
+nav a:hover {
+  background-color: #004585;
+}
+
+nav li:first-child {
+  margin-right: auto;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: #00458544;
+  backdrop-filter: blur(12px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sidebar li {
+  width: 100%;
+}
+.sidebar a {
+  width: 100%;
+}
+.menu-button {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
+  .overlay h1 {
+    font-size: 2em;
+  }
+  .overlay h2 {
+    font-size: 1.5em;
+  }
+  .overlay .small-text {
+    font-size: 1em;
+  }
+}
+@media (max-width: 400px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+
+
+
+#services {
+  padding: 100px 30px;
+  text-align: center;
+  background-color: #f9f9f9; /* Fondo más claro */
+  border-radius: 15px; /* Bordes redondeados */
+  border: 2px solid #0056b3; /* Marco azul */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Sombra más prominente */
+  margin: 30px auto; /* Margen superior e inferior */
+  max-width: 1200px; /* Máxima anchura para un diseño centrado */
+}
+
+.service-info {
+  display: flex; /* Alinear video y texto en una fila */
+  align-items: center; /* Centrar verticalmente los elementos */
+  justify-content: center; /* Centrar horizontalmente */
+  gap: 20px; /* Espaciado entre video y texto */
+  flex-wrap: wrap; /* Ajustar a varias líneas en pantallas pequeñas */
+}
+
+.service-info video {
+  width: 400px; /* Ancho fijo del video */
+  height: auto; /* Mantener proporción */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.text-container {
+  text-align: left; /* Alinear texto a la izquierda */
+  color: #004585; /* Color azul del texto */
+  max-width: 600px; /* Limitar el ancho del texto */
+}
+
+.text-container h3 {
+  margin-bottom: 10px; /* Espaciado inferior */
+  font-weight: bold; /* Título en negrita */
+  color: #003366; /* Tono azul más oscuro */
+}
+
+.text-container ul {
+  list-style-type: none; /* Eliminar viñetas */
+  padding-left: 0; /* Sin margen interno */
+}
+
+.text-container li {
+  margin-bottom: 10px; /* Espaciado entre elementos */
+  display: flex; /* Alinear ícono y texto */
+  align-items: center; /* Centrar verticalmente */
+  color: #555555; /* Color gris para el texto */
+}
+
+.text-container li i {
+  margin-right: 10px; /* Espacio entre el ícono y el texto */
+  color: #004585; /* Color azul para íconos */
+  font-size: 1.2em; /* Tamaño más grande para íconos */
+}
+
+/* Diseño responsivo */
+@media (max-width: 800px) {
+  .service-info {
+      flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+      align-items: center; /* Centrar elementos */
+  }
+
+  .text-container {
+      text-align: center; /* Centrar texto */
+  }
+
+  .service-info video {
+      width: 100%; /* Video responsivo */
+      max-width: 400px; /* Limitar tamaño máximo */
+  }
+}
+
+@media (max-width: 400px) {
+  #services {
+      padding: 30px 10px; /* Reducir padding en pantallas pequeñas */
+  }
+}
+
+
+
+/* Footer */
+footer {
+    position: relative;
+    width: 100%;
+    background: #004585; /* Color de fondo */
+    min-height: 150px; /* Ajusta la altura si es necesario */
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 150px; /* Separación del footer */
+  }
+  
+  footer .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: left; /* Alineación a la izquierda */
+    margin-bottom: 15px; /* Espaciado inferior */
+  }
+  
+  footer .info p {
+    margin: 0 15px; /* Espaciado entre icono y texto */
+    font-size: 1em;
+  }
+  
+  footer .info i {
+    margin-right: 5px; /* Espaciado entre el icono y el texto */
+    font-size: 1.5em; /* Tamaño del icono */
+  }
+  
+  footer .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px; /* Espaciado inferior de los iconos */
+  }
+  
+  footer .icons i {
+    margin: 0 15px; /* Espaciado entre iconos */
+    font-size: 2em; /* Tamaño del icono */
+  }
+  
+  .info {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+  }
+  
+  .info div {
+    display: flex;
+    align-items: center;
+  }
+  
+  .info i {
+    font-size: 2em; /* Ajusta el tamaño del icono */
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+  }
+  
+  footer .social_icons, footer .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+  }
+  
+  footer .social_icons li, footer .menu li {
+    list-style: none;
+  }
+  
+  footer .social_icons li a {
+    font-size: 2em;
+    color: white;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+  }
+  
+  footer .social_icons li a:hover {
+    transform: translateY(-10px);
+  }
+  
+  footer .menu li a {
+    font-size: 1em;
+    color: white;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+  }
+  
+  footer .menu li a:hover {
+    opacity: 1;
+  }
+  
+  footer p {
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1em;
+  }
+  
+  footer p a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  footer p ion-icon {
+    color: red;
+    font-size: 1em;
+    display: inline-block;
+    margin-bottom: -2px;
+  }
+  
+  footer .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(../Iconos/wave.png);
+    background-size: 1000px 100px;
+  }
+  
+  footer .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+  }
+  
+  footer .wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_02 4s linear infinite;
+  }
+  
+  footer .wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWave 3s linear infinite;
+  }
+  
+  footer .wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave_02 3s linear infinite;
+  }
+  
+  @keyframes animateWave {
+    0% {
+        background-position-x: 1000px;
+    }
+    100% {
+        background-position-x: 0;
+    }
+  }
+  
+  @keyframes animateWave_02 {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+  }
